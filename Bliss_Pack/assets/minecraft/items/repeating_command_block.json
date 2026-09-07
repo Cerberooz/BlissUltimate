@@ -1,0 +1,1 @@
+{"model":{"type":"range_dispatch","property":"custom_model_data","entries":[{"threshold":100.0,"model":{"type":"model","model":"af125adf-83ce-4f91-9148-6f7f7d6c0bdb","tints":[]}},{"threshold":101.0,"model":{"type":"model","model":"auratus","tints":[]}}],"fallback":{"type":"model","model":"block/repeating_command_block","tints":[]}}}

@@ -1,0 +1,475 @@
+# ██████╗░██╗░░░██╗      ░██████╗░█████╗░██╗░░░░░░██████╗████████╗░█████╗░████████╗███████╗
+# ██╔══██╗╚██╗░██╔╝      ██╔════╝██╔══██╗██║░░░░░██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██╔════╝
+# ██████╦╝░╚████╔╝░      ╚█████╗░██║░░██║██║░░░░░╚█████╗░░░░██║░░░███████║░░░██║░░░█████╗░░
+# ██╔══██╗░░╚██╔╝░░      ░╚═══██╗██║░░██║██║░░░░░░╚═══██╗░░░██║░░░██╔══██║░░░██║░░░██╔══╝░░
+# ██████╦╝░░░██║░░░      ██████╔╝╚█████╔╝███████╗██████╔╝░░░██║░░░██║░░██║░░░██║░░░███████╗
+# ╚═════╝░░░░╚═╝░░░      ╚═════╝░░╚════╝░╚══════╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚══════╝
+
+# Made by Solstate
+# Upgraded by Cerberooz
+# For any support join my discord: https://discord.gg/9W4vDZtBSx (Solstate)
+# To play on a competitive SMP join StrafeMC's discord: discord.gg/strafemc
+
+# ░█████╗░██████╗░████████╗██╗░█████╗░███╗░░██╗░██████╗
+# ██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║██╔════╝
+# ██║░░██║██████╔╝░░░██║░░░██║██║░░██║██╔██╗██║╚█████╗░
+# ██║░░██║██╔═══╝░░░░██║░░░██║██║░░██║██║╚████║░╚═══██╗
+# ╚█████╔╝██║░░░░░░░░██║░░░██║╚█████╔╝██║░╚███║██████╔╝
+# ░╚════╝░╚═╝░░░░░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
+# If you change any of these options, you need to reload or restart the server!
+EnableWithdrawCommand: true
+CustomRecipesEnabled: true # Set to false to disable every custom Bliss crafting recipe.
+EnableUltimateTrading: true
+DamageTrustedPlayer: false
+EnableLifeSystem: true # if you set this to false, if someone dies with pristine gem he will be given pristine gem again
+InvisibleKill: true
+BrokenGemEnergyUse: false
+BanOnBrokenGem: false
+DoubleDamageIfGemBroken: true
+AutoUntrust: true
+HitsForUntrust: 5
+TurnEnergyToUselessEnabled: true
+TurnEnergyToUseless: 60 # in minutes
+DisabledWorlds:
+  - lobby
+
+# ██████╗░██╗████████╗██╗░░░██╗░█████╗░██╗░░░░░    ░██████╗███████╗████████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
+# ██╔══██╗██║╚══██╔══╝██║░░░██║██╔══██╗██║░░░░░    ██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
+# ██████╔╝██║░░░██║░░░██║░░░██║███████║██║░░░░░    ╚█████╗░█████╗░░░░░██║░░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
+# ██╔══██╗██║░░░██║░░░██║░░░██║██╔══██║██║░░░░░    ░╚═══██╗██╔══╝░░░░░██║░░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
+# ██║░░██║██║░░░██║░░░╚██████╔╝██║░░██║███████╗    ██████╔╝███████╗░░░██║░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
+# ╚═╝░░╚═╝╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚══════╝    ╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░
+# Lets player click on repair item which gives same effects like the ritual which will be disabled if set to true
+DisableRepairRitual: false
+# Lets player click on restoration item which gives same effects like the ritual which will be disabled if set to true
+DisableRestorationRitual: false
+
+# Energy throw cooldown // in seconds
+RestorationCooldown: 60
+RepairCooldown: 60
+
+# ░██████╗░███████╗███╗░░░███╗    ░██████╗███████╗████████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
+# ██╔════╝░██╔════╝████╗░████║    ██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
+# ██║░░██╗░█████╗░░██╔████╔██║    ╚█████╗░█████╗░░░░░██║░░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
+# ██║░░╚██╗██╔══╝░░██║╚██╔╝██║    ░╚═══██╗██╔══╝░░░░░██║░░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
+# ╚██████╔╝███████╗██║░╚═╝░██║    ██████╔╝███████╗░░░██║░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
+# ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝    ╚═════╝░╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░
+
+# ░█████╗░░██████╗████████╗██████╗░░█████╗░      ░██████╗░███████╗███╗░░░███╗
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗      ██╔════╝░██╔════╝████╗░████║
+# ███████║╚█████╗░░░░██║░░░██████╔╝███████║      ██║░░██╗░█████╗░░██╔████╔██║
+# ██╔══██║░╚═══██╗░░░██║░░░██╔══██╗██╔══██║      ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██║░░██║██████╔╝░░░██║░░░██║░░██║██║░░██║      ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝      ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+astraT1:
+  dimDriftCooldown: 35
+  dimDriftActiveSeconds: 10
+
+astraT2:
+  daggerDamage: 4.0
+  dimensionalDriftCooldown: 35
+  daggersCooldown: 80
+  astralProjectionCooldown: 300
+  astralProjectionDarkness: true
+  dimensionalDriftDuration: 10
+  daggerDuration: 50
+  daggerDisableDuration: 15
+  unboundedDuration: 15
+  spookDisableDuration: 10
+  hauntDisableDuration: 30
+  astralVoidDuration: 100
+  astralVoidDisableDuration: 10
+  astralProjectionRange: 150
+  daggerShootCooldown: 1
+
+# ███████╗██╗██████╗░███████╗     ░██████╗░███████╗███╗░░░███╗
+# ██╔════╝██║██╔══██╗██╔════╝     ██╔════╝░██╔════╝████╗░████║
+# █████╗░░██║██████╔╝█████╗░░     ██║░░██╗░█████╗░░██╔████╔██║
+# ██╔══╝░░██║██╔══██╗██╔══╝░░     ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██║░░░░░██║██║░░██║███████╗     ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚══════╝     ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+# Controller Fire Gem revamp. Values are seconds unless stated otherwise.
+fire:
+  heatwave:
+    cooldown: 40
+    duration: 3
+  campfire:
+    cooldown: 50
+    duration: 8
+    range: 4
+    slowAmplifier: 0
+    boundaryDamageCooldownSeconds: 1
+    energy:
+      1: { duration: 8, cooldown: 50 }
+      2: { duration: 8, cooldown: 49 }
+      3: { duration: 8, cooldown: 48 }
+      4: { duration: 9, cooldown: 47 }
+      5: { duration: 9, cooldown: 46 }
+      6: { duration: 9, cooldown: 44 }
+      7: { duration: 9, cooldown: 43 }
+      8: { duration: 10, cooldown: 42 }
+      9: { duration: 10, cooldown: 41 }
+      10: { duration: 10, cooldown: 40 }
+  fireball:
+    cooldown: 70
+    duration: 5
+    chargeSeconds: 7
+    launchWindowSeconds: 5
+    range: 3
+    zoneSlowAmplifier: 1
+    energy:
+      1: { duration: 5, cooldown: 70 }
+      2: { duration: 5, cooldown: 69 }
+      3: { duration: 5, cooldown: 68 }
+      4: { duration: 6, cooldown: 67 }
+      5: { duration: 6, cooldown: 66 }
+      6: { duration: 6, cooldown: 64 }
+      7: { duration: 6, cooldown: 63 }
+      8: { duration: 7, cooldown: 62 }
+      9: { duration: 7, cooldown: 61 }
+      10: { duration: 7, cooldown: 60 }
+
+# ███████╗██╗░░░░░██╗░░░██╗██╗░░██╗     ░██████╗░███████╗███╗░░░███╗
+# ██╔════╝██║░░░░░██║░░░██║╚██╗██╔╝     ██╔════╝░██╔════╝████╗░████║
+# █████╗░░██║░░░░░██║░░░██║░╚███╔╝░     ██║░░██╗░█████╗░░██╔████╔██║
+# ██╔══╝░░██║░░░░░██║░░░██║░██╔██╗░     ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██║░░░░░███████╗╚██████╔╝██╔╝╚██╗     ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═╝░░░░░╚══════╝░╚═════╝░╚═╝░░╚═╝     ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+fluxT1:
+  shockingChance: 10
+  shockDuration: 1
+  kineticBurstCooldown: 30
+
+fluxT2:
+  shockingChance: 15
+  shockDuration: 2
+  beamCooldown: 90
+  groundCooldown: 30
+  kineticBurstCooldown: 30
+  kineticOverdriveCooldown: 30
+  kineticOverdriveDuration: 30
+  groundEffectDuration: 3
+  beamBaseDamage: 5.0
+  hasteBlocksPerLevel: 10 # Blocks needed per Haste level
+  hasteMaxLevel: 9 # Maximum Haste level
+  kineticBurstRadius: 5
+  beamMaxCharge: 200 # Percentage
+  beamArmorDamage: 40
+
+  # Charging values
+  copperIngotWatts: 1928
+  copperBlockWatts: 17352
+  ironIngotWatts: 106
+  ironBlockWatts: 1067
+  diamondWatts: 5202
+  diamondBlockWatts: 46819
+  netheriteIngotWatts: 46819
+  netheriteBlockWatts: 421378
+  witherSkullWatts: 112047
+
+  chargePerTick: 0.667 # How much % charges per tick
+  groundShuffleInterval: 10 # Ticks between hotbar shuffles
+
+# ██╗░░░░░██╗███████╗███████╗     ░██████╗░███████╗███╗░░░███╗
+# ██║░░░░░██║██╔════╝██╔════╝     ██╔════╝░██╔════╝████╗░████║
+# ██║░░░░░██║█████╗░░█████╗░░     ██║░░██╗░█████╗░░██╔████╔██║
+# ██║░░░░░██║██╔══╝░░██╔══╝░░     ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ███████╗██║██║░░░░░███████╗     ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚══════╝╚═╝╚═╝░░░░░╚══════╝     ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+lifeT1:
+  vitalityCooldown: 40
+
+lifeT2:
+  circleOfLifeCooldown: 180
+  heartLock: 75 # Heart lock and Heart drainer
+  vitalityVortexCooldown: 45
+  heartLockDuration: 20 # How long heart lock lasts
+  heartDrainerMaxHealthDuration: 20 # How long max health reduction lasts
+  circleOfLifeDuration: 15
+  vitalityVortexDuration: 9 # Block transformation duration
+  lifeDrainedSoloDuration: 20 # Solo healing effect duration
+  lifeCoLGroupDuration: 2 # Circle of Life healing buff duration
+  passiveHealAmount: 1.0 # Hearts healed every interval
+  passiveHealInterval: 6 # Seconds between passive heals
+  heartDrainerVictimHealth: 12 # Without Dragon Egg
+  heartDrainerVictimHealthEgg: 32 # With Dragon Egg
+  heartLockMinimumHealth: 6
+  circleOfLifeMaxHealth: 30 # Without Dragon Egg
+  circleOfLifeMaxHealthEgg: 50 # With Dragon Egg
+  heartDrainerRadius: 3.0
+  circleOfLifeRadius: 5.0
+  circleOfLifeHealRadius: 4.0
+  vitalityVortexRadius: 5
+  vitalityVortexCircleRadius: 4.5
+  goldenAppleAbsorptionLevel: 1
+  enchantedGoldenAppleAbsorptionLevel: 4
+  vitalityVortexRegenerationDuration: 60
+  vitalityVortexRegenerationLevel: 0
+  vitalityVortexAbsorptionDuration: 600
+  vitalityVortexAbsorptionLevel: 1
+  armorRepairAmount: 6 # Durability restored per tick
+
+# ██████╗░██╗░░░██╗███████╗███████╗      ░██████╗░███████╗███╗░░░███╗
+# ██╔══██╗██║░░░██║██╔════╝██╔════╝      ██╔════╝░██╔════╝████╗░████║
+# ██████╔╝██║░░░██║█████╗░░█████╗░░      ██║░░██╗░█████╗░░██╔████╔██║
+# ██╔═══╝░██║░░░██║██╔══╝░░██╔══╝░░      ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██║░░░░░╚██████╔╝██║░░░░░██║░░░░░      ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═╝░░░░░░╚═════╝░╚═╝░░░░░╚═╝░░░░░      ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+puff:
+  doubleJump:
+    cooldown: 5
+    tier2Cooldown: 3
+    horizontal: 1.05
+    vertical: 0.72
+    verticalLook: 0.35
+  windrunner:
+    duration: 2
+  breezeBash:
+    cooldown: 60
+    duration: 2
+    range: 5
+    damage: 2
+    launch: 0.75
+  tailwindLunge:
+    cooldown: 60
+    velocity: 2.25
+    durationTicks: 9
+    damage: 1
+    pull: 1.15
+
+# ░██████╗██████╗░███████╗███████╗██████╗░      ░██████╗░███████╗███╗░░░███╗
+# ██╔════╝██╔══██╗██╔════╝██╔════╝██╔══██╗      ██╔════╝░██╔════╝████╗░████║
+# ╚█████╗░██████╔╝█████╗░░█████╗░░██║░░██║      ██║░░██╗░█████╗░░██╔████╔██║
+# ░╚═══██╗██╔═══╝░██╔══╝░░██╔══╝░░██║░░██║      ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██████╔╝██║░░░░░███████╗███████╗██████╔╝      ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═════╝░╚═╝░░░░░╚══════╝╚══════╝╚═════╝░      ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+speedT1:
+  thunderStepCooldown: 15
+  speedGemDolphinsGraceLvl: 0
+
+speedT2:
+  thunderStepCooldown: 15
+  blurCooldown: 90
+  speedStormRecharge: 20
+  speedGemPotionLevel: 1
+  speedGemDolphinsGraceLvl: 0
+  blurActive: 10
+  blurDamagePerHit: 1.0
+  speedStormDamagePerSecond: 1.0
+  thunderStepDistance: 6.0
+  speedStormMaxRadius: 6.0
+  speedStormTargetRange: 15
+  speedStormMaxCharges: 3
+  blurIterationDelay: 10
+  speedStormSpeedDuration: 100 # Duration of the potion effect in ticks
+  speedStormSpeedLevelNormal: 2 # for charges 3 & 2
+  speedStormSpeedLevelLast: 4 # for last charge
+  speedStormSlownessDuration: 60 # Slowness duration in ticks
+  speedStormSlownessLevel: 0 # Slowness I
+  speedStormTrustedSpeedDuration: 40 # Speed duration for allies in ticks
+  speedStormTrustedSpeedLevel: 1 # Speed II
+
+# ░██████╗████████╗██████╗░███████╗███╗░░██╗░██████╗░████████╗██╗░░██╗     ░██████╗░███████╗███╗░░░███╗
+# ██╔════╝╚══██╔══╝██╔══██╗██╔════╝████╗░██║██╔════╝░╚══██╔══╝██║░░██║     ██╔════╝░██╔════╝████╗░████║
+# ╚█████╗░░░░██║░░░██████╔╝█████╗░░██╔██╗██║██║░░██╗░░░░██║░░░███████║     ██║░░██╗░█████╗░░██╔████╔██║
+# ░╚═══██╗░░░██║░░░██╔══██╗██╔══╝░░██║╚████║██║░░╚██╗░░░██║░░░██╔══██║     ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██████╔╝░░░██║░░░██║░░██║███████╗██║░╚███║╚██████╔╝░░░██║░░░██║░░██║     ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚══╝░╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝     ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+# Strength Gem — values are in seconds. An energy entry overrides the ability default.
+strength:
+  frailer:
+    duration: 5
+    cooldown: 40
+    targetRange: 15
+    maxDistance: 15
+    bonusPerConsecutiveHitPercent: 1
+    maxBonusPercent: 15
+    energy:
+      1: { duration: 5, cooldown: 40 }
+      2: { duration: 5, cooldown: 39 }
+      3: { duration: 5, cooldown: 38 }
+      4: { duration: 6, cooldown: 37 }
+      5: { duration: 6, cooldown: 36 }
+      6: { duration: 6, cooldown: 34 }
+      7: { duration: 6, cooldown: 33 }
+      8: { duration: 7, cooldown: 32 }
+      9: { duration: 7, cooldown: 31 }
+      10: { duration: 7, cooldown: 30 }
+  sharpEdge:
+    duration: 5
+    cooldown: 50
+    bonusCritEvery: 3
+    energy:
+      1: { duration: 5, cooldown: 50 }
+      2: { duration: 5, cooldown: 49 }
+      3: { duration: 5, cooldown: 48 }
+      4: { duration: 6, cooldown: 47 }
+      5: { duration: 6, cooldown: 46 }
+      6: { duration: 6, cooldown: 44 }
+      7: { duration: 6, cooldown: 43 }
+      8: { duration: 7, cooldown: 42 }
+      9: { duration: 7, cooldown: 41 }
+      10: { duration: 7, cooldown: 40 }
+  hunterMark:
+    duration: 10
+    cooldown: 45
+    energy:
+      1: { duration: 10, cooldown: 45 }
+      2: { duration: 11, cooldown: 44 }
+      3: { duration: 11, cooldown: 43 }
+      4: { duration: 12, cooldown: 42 }
+      5: { duration: 12, cooldown: 41 }
+      6: { duration: 13, cooldown: 40 }
+      7: { duration: 13, cooldown: 39 }
+      8: { duration: 14, cooldown: 38 }
+      9: { duration: 14, cooldown: 37 }
+      10: { duration: 15, cooldown: 35 }
+
+# ░██╗░░░░░░░██╗███████╗░█████╗░██╗░░░░░████████╗██╗░░██╗     ░██████╗░███████╗███╗░░░███╗
+# ░██║░░██╗░░██║██╔════╝██╔══██╗██║░░░░░╚══██╔══╝██║░░██║     ██╔════╝░██╔════╝████╗░████║
+# ░╚██╗████╗██╔╝█████╗░░███████║██║░░░░░░░░██║░░░███████║     ██║░░██╗░█████╗░░██╔████╔██║
+# ░░████╔═████║░██╔══╝░░██╔══██║██║░░░░░░░░██║░░░██╔══██║     ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ░░╚██╔╝░╚██╔╝░███████╗██║░░██║███████╗░░░██║░░░██║░░██║     ╚██████╔╝███████╗██║░╚═╝░██║
+# ░░░╚═╝░░░╚═╝░░╚══════╝╚═╝░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝     ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+
+wealthT1:
+  pocketsDeathDropCount: 5
+
+wealthT2:
+  richRushCooldown: 360
+  unfortunateCooldown: 90
+  itemLockCooldown: 90
+  amplificationCooldown: 360
+  richRushDuration: 300
+  unfortunateDuration: 40
+  itemLockDuration: 30
+  amplificationDuration: 30
+  amplificationRadius: 2.0
+  itemLockRadius: 2.0
+  unfortunateBlockBreakChance: 50
+  unfortunateAttackChance: 50
+  unfortunateEatChance: 50
+  unfortunatePlaceChance: 50
+  unfortunateBowChance: 50
+  pocketsDeathDropCount: 3
+
+# ░█████╗░██╗░░░██╗██████╗░░█████╗░████████╗██╗░░░██╗░██████╗       ░██████╗░███████╗███╗░░░███╗
+# ██╔══██╗██║░░░██║██╔══██╗██╔══██╗╚══██╔══╝██║░░░██║██╔════╝       ██╔════╝░██╔════╝████╗░████║
+# ███████║██║░░░██║██████╔╝███████║░░░██║░░░██║░░░██║╚█████╗░       ██║░░██╗░█████╗░░██╔████╔██║
+# ██╔══██║██║░░░██║██╔══██╗██╔══██║░░░██║░░░██║░░░██║░╚═══██╗       ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██║░░██║╚██████╔╝██║░░██║██║░░██║░░░██║░░░╚██████╔╝██████╔╝       ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═╝░░╚═╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═════╝░       ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+
+auratusGem:
+  chainCharges: 2
+  chainRechargeTime: 10
+  skyHookCooldownSeconds: 10
+  parryCooldownSeconds: 10
+  parryWindowSeconds: 2 # how long does parry last for
+  parryDurabilityDamage: 40
+  flagPoleDuration: 15
+  groundSlamMinDamage: 4.0
+  groundSlamMaxDamage: 12.0
+  groundSlamWindChargeDisableSeconds: 10
+  chainGrappleTravelSpeed: 20
+  chainGrappleRetractSpeed: 4.0 # how fast does chain return to you
+  chainGrappleMaxRange: 150.0
+  chainGrappleSlamBaseDamage: 10.0
+
+# ██╗░░██╗███████╗██████╗░███████╗████████╗██╗░█████╗░      ░██████╗░███████╗███╗░░░███╗
+# ██║░░██║██╔════╝██╔══██╗██╔════╝╚══██╔══╝██║██╔══██╗      ██╔════╝░██╔════╝████╗░████║
+# ███████║█████╗░░██████╔╝█████╗░░░░░██║░░░██║██║░░╚═╝      ██║░░██╗░█████╗░░██╔████╔██║
+# ██╔══██║██╔══╝░░██╔══██╗██╔══╝░░░░░██║░░░██║██║░░██╗      ██║░░╚██╗██╔══╝░░██║╚██╔╝██║
+# ██║░░██║███████╗██║░░██║███████╗░░░██║░░░██║╚█████╔╝      ╚██████╔╝███████╗██║░╚═╝░██║
+# ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░╚════╝░      ░╚═════╝░╚══════╝╚═╝░░░░░╚═╝
+
+hereticGem:
+  bloodsaws:
+    maxCharges: 2
+    rechargeTimeSeconds: 5
+    damage: 5.0
+    maxDistance: 50
+    breakCobwebs: true
+    cobwebBreakRadius: 1.2
+
+  bloodLinking:
+    cooldownSeconds: 25
+    durationSeconds: 10
+
+  bloodRitual: # The mace thing, I am not sure how it is called
+    cooldownSeconds: 45
+    glideSpeed: 3.5
+    maxGlideSeconds: 3
+    maxLaunches: 5
+    damageRadius: 1.5
+    damage: 4.0
+
+# ░█████╗░██████╗░░█████╗░███████╗████████╗██╗███╗░░██╗░██████╗░░██████╗
+# ██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██║████╗░██║██╔════╝░██╔════╝
+# ██║░░╚═╝██████╔╝███████║█████╗░░░░░██║░░░██║██╔██╗██║██║░░██╗░╚█████╗░
+# ██║░░██╗██╔══██╗██╔══██║██╔══╝░░░░░██║░░░██║██║╚████║██║░░╚██╗░╚═══██╗
+# ╚█████╔╝██║░░██║██║░░██║██║░░░░░░░░██║░░░██║██║░╚███║╚██████╔╝██████╔╝
+# ░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═════╝░
+# Enable each recipe below individually when CustomRecipesEnabled is true.
+Energy:
+  enabled: false
+  shape:
+    - "DBD"
+    - "BSB"
+    - "DBD"
+  ingredients:
+    D: NETHERITE_INGOT
+    B: DRAGON_BREATH
+    S: NETHERITE_BLOCK
+
+Trader:
+  enabled: false
+  shape:
+    - "DBD"
+    - "BSB"
+    - "DBD"
+  ingredients:
+    D: DIAMOND_BLOCK
+    B: DRAGON_BREATH
+    S: SCULK_CATALYST
+
+Upgrader:
+  enabled: true
+  shape:
+    - " N "
+    - "NWN"
+    - " N "
+  ingredients:
+    N: NETHERITE_INGOT
+    W: WITHER_SKELETON_SKULL
+
+Restoration:
+  enabled: false
+  shape:
+    - " N "
+    - "NWN"
+    - " N "
+  ingredients:
+    N: DIAMOND_BLOCK
+    W: WITHER_SKELETON_SKULL
+
+Repair:
+  enabled: false
+  shape:
+    - " N "
+    - "NWN"
+    - " N "
+  ingredients:
+    N: NETHERITE_BLOCK
+    W: WITHER_SKELETON_SKULL
+
+# ██████╗░██████╗░░█████╗░░██████╗░██████╗░███████╗░██████╗░██████╗██╗░█████╗░███╗░░██╗░██████╗
+# ██╔══██╗██╔══██╗██╔══██╗██╔════╝░██╔══██╗██╔════╝██╔════╝██╔════╝██║██╔══██╗████╗░██║██╔════╝
+# ██████╔╝██████╔╝██║░░██║██║░░██╗░██████╔╝█████╗░░╚█████╗░╚█████╗░██║██║░░██║██╔██╗██║╚█████╗░
+# ██╔═══╝░██╔══██╗██║░░██║██║░░╚██╗██╔══██╗██╔══╝░░░╚═══██╗░╚═══██╗██║██║░░██║██║╚████║░╚═══██╗
+# ██║░░░░░██║░░██║╚█████╔╝╚██████╔╝██║░░██║███████╗██████╔╝██████╔╝██║╚█████╔╝██║░╚███║██████╔╝
+# ╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░╚═════╝░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░
+
+# Don´t change this, changes automatically when /disable command is ran
+gemsDisabled: false
+

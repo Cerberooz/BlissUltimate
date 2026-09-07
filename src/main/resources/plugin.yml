@@ -1,0 +1,32 @@
+name: BlissUltimate
+version: 4.0.0
+main: cerberooz.cerberooz.BlissUltimate.Bliss
+api-version: '1.21'
+authors: [ Solstate, Cerberooz ]
+softdepend: [ UltimateAdvancementAPI, WorldGuard, Citizens ]
+load: POSTWORLD
+permissions:
+  bliss.admin:
+    default: op
+commands:
+  setenergy:
+    permission: bliss.admin
+  setwatts:
+    permission: bliss.admin
+  pedestal:
+    usage: /pedestal <set|activate|deactivate|remove>
+    permission: bliss.admin
+  gems:
+    permission: bliss.admin
+  giveblissitem:
+    permission: bliss.admin
+  disable:
+    permission: bliss.admin
+  cooldown:
+    permission: bliss.admin
+  random:
+    permission: bliss.admin
+    usage: /random <Player>
+  withdraw:
+  trust:
+    usage: /trust <add|remove|list> [player]
